@@ -15,7 +15,7 @@ export class AppComponent  {
     iconReg: MatIconRegistry, sanitizer: DomSanitizer
     ) {
       iconReg.addSvgIconSetInNamespace
-        ( "action", sanitizer.bypassSecurityTrustResourceUrl("assets/svg-icons/svg-sprite-action.svg"));
+        ( "action", sanitizer.bypassSecurityTrustResourceUrl("node_modules/material-design-icons/sprites/svg-sprites/svg-sprite-action.svg"));
 
       console.log(iconReg.getDefaultFontSetClass());
   }
