@@ -1,0 +1,67 @@
+<h1>{{ name }}</h1>
+
+<h3>Animated Icon Buttons</h3>
+
+<button mat-flat-button color="primary" (click)="toggleAnimate()">Animate</button>
+
+<div>
+  <button mat-icon-button aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="menu" end="close" colorStart="none" colorEnd="none" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button colorStart="primary" colorEnd="accent" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="help" end="error" colorStart="primary" colorEnd="warn" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button colorStart="primary" colorEnd="accent" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="done" end="favorite" colorStart="accent" colorEnd="none" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="play_arrow" end="pause" colorStart="primary" colorEnd="accent" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button (click)="!this.disabled && iconAnimate10.var=!iconAnimate10.var" #iconAnimate10="var" var="'false'" mat-icon-button [disabled]="true" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="menu" end="close" colorStart="none" colorEnd="none" [animate]="iconAnimate10.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+</div>
+
+<h3>Icon Buttons</h3>
+<div>
+  <button mat-icon-button aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="primary" colorEnd="primary" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="accent" colorEnd="accent" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="warn" colorEnd="warn" [animate]="animate"></mat-animated-icon>
+  </button>
+  <button (click)="!this.disabled && iconAnimate9.var=!iconAnimate9.var" #iconAnimate9="var" var="'false'" mat-icon-button disabled aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate9.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+</div>
+
+<h3>Fab Buttons</h3>
+<div>
+  <button mat-fab (click)="animate = !animate">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="animate" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <button (click)="iconAnimate.var=!iconAnimate.var" #iconAnimate="var" var="'false'" mat-fab color="primary">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <button (click)="iconAnimate2.var=!iconAnimate2.var" #iconAnimate2="var" var="'false'" mat-fab color="accent">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate2.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <button (click)="iconAnimate3.var=!iconAnimate3.var" #iconAnimate3="var" var="'false'" mat-fab color="warn">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate3.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <button (click)="!this.disabled && iconAnimate4.var=!iconAnimate4.var" #iconAnimate4="var" var="'false'" mat-fab disabled>
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate4.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <button (click)="iconAnimate5.var=!iconAnimate5.var" #iconAnimate5="var" var="'false'" mat-fab aria-label="Example icon-button with a heart icon">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate5.var" animateFromParent="true"></mat-animated-icon>
+  </button>
+  <a (click)="iconAnimate6.var=!iconAnimate6.var" #iconAnimate6="var" var="'false'" mat-fab routerLink=".">
+    <mat-animated-icon start="favorite" end="favorite" colorStart="none" colorEnd="none" [animate]="iconAnimate6.var" animateFromParent="true"></mat-animated-icon>
+  </a>
+</div>
