@@ -1,7 +1,5 @@
 <mat-icon
-  svgIcon="{{animate ? end : start}}"
-  fontSet="MaterialIcons-Regular"
-  inline="true"
+  svgIcon="{{animate ? 'MaterialIcons-Regular:' + end : start}}"
   [ngClass]="{'animate' : animate}" color="{{animate ? colorEnd : colorStart}}" (click)="toggle()"></mat-icon>
 
 
