@@ -17,6 +17,13 @@
   url(../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Material Icons';
+        src: url('../../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.svg#MaterialIcons-Regular') format('svg');
+    }
+}
+
 
 
 .material-icons {
