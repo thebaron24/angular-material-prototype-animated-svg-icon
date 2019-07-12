@@ -1,5 +1,5 @@
 <mat-icon
-  svgIcon="ic_home_24px"
+  svgIcon="{{animate ? end : start}}"
   [ngClass]="{'animate' : animate}" color="{{animate ? colorEnd : colorStart}}" (click)="toggle()"></mat-icon>
 
 
